@@ -22,8 +22,8 @@
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |登録日|reg_date|date||○||
-|削除日|del_date|date||||
 |更新日|upd_date|date||||
+|削除日|del_date|date||||
 
 ## m_authorization
 
