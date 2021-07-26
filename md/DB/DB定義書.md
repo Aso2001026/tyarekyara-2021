@@ -4,84 +4,65 @@
 
 # データベース設計図
 
-## t_purchase
+## m_countries
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|オーダーID|order_id|bigint(20)|○|○||
-|顧客コード|customer_code|varchar(50)||○|○|
-|購入日|purchase_date|date||○||
-|総額|total_price|int(11)||○||
+|国コード|country_code|varchar(3)|○|○||
+|国名|country_name|varchar(50)||○||
 
-## t_purchase_detail
+## m_users
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|オーダーID|order_id|bigint(20) |○|○|○|
-|商品コード|item_code|int(11)|○|○|○|
-|価格|price|int(11)||○||
-|数量|num|int(11)||○||
-
-## m_customers
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|顧客コード|customer_code|varchar(50)|○|○||
-|パスワード|pass|varchar(50)||○||
+|ユーザーID|user_id|int(12)|○|○||
+|ユーザー名|user_name|varchar(20)||○||
+|ユーザー画像ファイル名|user_image|varchar(200)||○||
 |氏名|name|varchar(20)||○||
-|郵便番号|postal_code|varchar(15)||○|| 
-|住所|address|varchar(100)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
-|削除フラグ|del_flag|int(1)||○||
 |登録日|reg_date|date||○||
+|削除日|del_date|date||||
+|更新日|upd_date|date||||
+
+## m_authorization
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ログインID|login_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)||○|○|
+|パスワード|pass|varchar(20)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
 
 ## m_category
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|カテゴリID|category_id|int(11)|○|○||
-|氏名|name|varchar(20)||○||
+|カテゴリID|category_id|int(12)|○|○||
+|カテゴリ名|category_name|varchar(50)||○||
 |登録日|reg_date|date||○||
+|削除日|del_date|date||||
 
-## m_items
+## m_tag
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|商品コード|item_code|int(11)|○|○||
-|商品名|item_name|varchar(50)||○||
-|価格|price|int(11)||○||
-|カテゴリID|category_id|int(11)||○|○|
-|画像ファイル名|image|varchar(200)||○||
-|商品詳細証明|detail|varchar(500)||||
-|削除フラグ|del_flag|int(1)||○||
+|タグID|tag_id|int(12)|○|○||
+|タグ名|tag_name|varchar(50)||○||
 |登録日|reg_date|date||○||
+|削除日|del_date|date||||
 
-## t_questions
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|質問番号|question_code|int(11)|○|○||
-|氏名|name|varchar(20)||○||
-|電話番号|tel|varchar(20)||○||
-|メールアドレス|mail|varchar(100)||○||
-|質問内容|question|varchar(500)||○||
-|質問内容|solution_flag|int(1)||○||
-|質問日|ques_date|date||○||
-
-## t_answers
+## m_shop
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|質問番号|question_code|int(11)|○|○|○|
-|回答番号|answer_code|int(11)|○|○||
-|担当者ID|employee_code|int(11)||○|○|
-|回答内容|answer|varchar(500)||○||
-|回答日|ans_date|date||○||
-
-## m_enployees
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|従業員ID|employee_code|int(11)|○|○||
-|氏名|name|varchar(20)||○||
+|ショップID|shop_id|int(12)|○|○||
+|店名|shop_name|varchar(50)||○||
+|郵便番号|shop_postal_code|varchar(20)||○||
+|住所|shop_address|varchar(100)||○||
 |登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+
