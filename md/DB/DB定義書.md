@@ -94,9 +94,11 @@
 |---|-----|--|--|--|--|
 |レビューid|review_id|int(12)|○|○||
 |レビューコメント|review_comment|varchar(500)||○||
-|レビュー日|review_date|date||○||
 |ショップID|shop_id|int(12)||○|○|
 |商品ID|item_id|int(12)||○|○|
 |ユーザーID|user_id|date||○|○|
+|レビュー日|review_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
 |いいね|good_count|int(12)||○||
 
