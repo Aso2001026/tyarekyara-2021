@@ -141,3 +141,5 @@
 |定型文|fixedphrase|varchar(500)||○||
 |状況ID|situation_id|int(12)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
+
+
