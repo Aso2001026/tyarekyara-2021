@@ -75,6 +75,12 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
+## m_item
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|商品ID|item_id|int(12)|○|○||
+|商品名|shop_name|varchar(50)||○||
+
 
 ## m_shopCategry
 
@@ -86,17 +92,31 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_items
+## m_shopItems
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|商品ID|item_id|int(12)|○|○||
-|商品名|shop_name|varchar(50)||○||
+|ショップID|shop_id|int(12)|○|○|○|
+|商品ID|item_id|int(12)|○|○|○|
 |単価|item_price|int(30)||○||
 |通貨コード|currency_code|varchar(3)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
+
+## m_situation
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|状況ID|situation_id|int(12)|○|○||
+|状況名|situation_name|varchar(50)||○||
+
+## m_language
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|言語コード|language_code|varchar(2)|○|○||
+|言語名|language_name|varchar(50)||○||
 
 ## t_review
 
@@ -112,3 +132,12 @@
 |削除日|del_date|date||||
 |いいね|good_count|int(12)||○||
 
+## m_fixedPhrase
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|定型文ID|fixedphrase_id|int(12)|○|○||
+|定型文名|fixedphrase_name|varchar(100)||○||
+|定型文|fixedphrase|varchar(500)||○||
+|状況ID|situation_id|int(12)||○|○|
+|言語コード|language_code|varchar(2)||○|○|
