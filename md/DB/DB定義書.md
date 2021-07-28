@@ -92,6 +92,16 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
+## m_shopPayment
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ショップID|shop_id|int(12)|○|○|○|
+|支払いコード|payment_code|int(12)|○|○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
 ## m_shopItems
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -118,6 +128,23 @@
 |言語コード|language_code|varchar(2)|○|○||
 |言語名|language_name|varchar(50)||○||
 
+## m_fixedPhrase
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|定型文ID|fixedphrase_id|int(12)|○|○||
+|定型文名|fixedphrase_name|varchar(100)||○||
+|定型文|fixedphrase|varchar(500)||○||
+|状況ID|situation_id|int(12)||○|○|
+|言語コード|language_code|varchar(2)||○|○|
+
+## m_payment
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|支払い方法コード|payment_code|int(12)|○|○||
+|支払い方法名|payment_name|varchar(100)||○||
+
 ## t_review
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -132,14 +159,20 @@
 |削除日|del_date|date||||
 |いいね|good_count|int(12)||○||
 
-## m_fixedPhrase
+
+## t_securityInformation
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|定型文ID|fixedphrase_id|int(12)|○|○||
-|定型文名|fixedphrase_name|varchar(100)||○||
-|定型文|fixedphrase|varchar(500)||○||
-|状況ID|situation_id|int(12)||○|○|
-|言語コード|language_code|varchar(2)||○|○|
+|治安情報id|sInformation_id|int(12)|○|○||
+|治安情報|sInformation|varchar(500)||○||
+|国コード|country_code|varchar(3)||○|○|
+|発生場所|sInformation_address|varchar(100)||○||
+|登録日|review_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+|いいね|good_count|int(12)||○||
+
+
 
 
