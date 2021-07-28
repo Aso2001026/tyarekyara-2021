@@ -144,6 +144,13 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |支払い方法コード|payment_code|int(12)|○|○||
+|支払い方法名|payment_name|varchar(100)||○||]
+
+## m_payment
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|支払い方法コード|payment_code|int(12)|○|○||
 |支払い方法名|payment_name|varchar(100)||○||
 
 ## t_review
