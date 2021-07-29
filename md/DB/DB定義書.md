@@ -30,6 +30,7 @@
 |氏名|name|varchar(20)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
+|国コード|country_code|varchar(3)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
