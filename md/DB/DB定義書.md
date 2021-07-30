@@ -47,13 +47,24 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_category
+## m_sCategory
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|カテゴリID|category_id|int(12)|○|○||
+|ショップカテゴリID|sCategory_id|int(12)|○|○||
 |カテゴリ名|category_name|varchar(50)||○||
 |登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+## m_iCategory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|商品カテゴリID|iCategory_id|int(12)|○|○||
+|カテゴリ名|category_name|varchar(50)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
 |削除日|del_date|date||||
 
 ## m_tag
@@ -82,6 +93,7 @@
 |---|-----|--|--|--|--|
 |商品ID|item_id|int(12)|○|○||
 |商品名|shop_name|varchar(50)||○||
+|商品カテゴリID|iCategory_id|int(12)||○|○|
 
 
 ## m_shopCategry
@@ -89,7 +101,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○|○|
-|カテゴリーID|category_id|int(12)|○|○|○|
+|ショップカテゴリーID|sCategory_id|int(12)|○|○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
