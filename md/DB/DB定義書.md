@@ -177,7 +177,7 @@
 |治安情報|sInformation|varchar(500)||○||
 |国コード|country_code|varchar(3)||○|○|
 |発生場所|sInformation_address|varchar(100)||○||
-|登録日|review_date|date||○||
+|登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 |いいね|good_count|int(12)||○||
