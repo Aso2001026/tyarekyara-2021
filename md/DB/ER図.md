@@ -192,7 +192,7 @@ shopItems             }o-ri-o|   item
 shopPayment           }o-do-o|   shop
 shopPayment           }o-ri-o|   payment
 item                  }o-ri-o|   iCategory
-shop                  }o-ri-o|   sCategory
+shop                  }o-do-o|   sCategory
 authorization         |o-ri-o|   users
 users                 }o-do-o|   countries
 users                 }o-ri-o|   language                  
