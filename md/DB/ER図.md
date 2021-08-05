@@ -186,7 +186,7 @@ review                }o-do-o|   tag
 review                }o-up-o|   users
 fixedPhrase           }o-le-o|   language
 fixedPhrase           }o-ri-o|   situation
-shopItems             }o-up-o|   currency
+shopItems             }o-do-o|   currency
 shopItems             }o-le-o|   shop
 shopItems             }o-ri-o|   item
 shopPayment           }o-do-o|   shop
