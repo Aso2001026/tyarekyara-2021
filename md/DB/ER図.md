@@ -184,8 +184,8 @@ review                }o-ri-o|   shop
 review                }o-do-o|   item
 review                }o-do-o|   tag
 review                }o-up-o|   users
-fixedPhrase           }o-ri-o|   language
-fixedPhrase           }o-le-o|   situation
+fixedPhrase           }o-le-o|   language
+fixedPhrase           }o-ri-o|   situation
 shopItems             }o-up-o|   currency
 shopItems             }o-le-o|   shop
 shopItems             }o-ri-o|   item
