@@ -142,7 +142,7 @@ package "AnyPort" as target_system {
         --
         fixedphrase_name
         fixedphrase
-        situation_id
+        # situation_id  [FK]
         # language_code [FK]
     }
     
@@ -185,13 +185,17 @@ review                }o-do-o|   item
 review                }o-le-o|   tag
 review                }o-up-o|   users
 fixedPhrase           }o-ri-o|   language
+fixedPhrase           }o-le-o|   situation
 shopItems             }o-up-o|   currency
 shopItems             }o-le-o|   shop
 shopItems             }o-ri-o|   item
-item                  }o-ri-o|   iCategory
 shopPayment           }o-do-o|   shop
 shopPayment           }o-ri-o|   payment
-
+item                  }o-ri-o|   iCategory
+shop                  }o-ri-o|   sCategory
+authorization         |o-ri-o|   users
+users                 }o-le-o|   countries
+users                 }o-ri-o|   language                  
 
 @enduml
 ```
