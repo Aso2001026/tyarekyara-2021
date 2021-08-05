@@ -190,7 +190,7 @@ shopItems             }o-do-o|   currency
 shopItems             }o-le-o|   shop
 shopItems             }o-ri-o|   item
 shopPayment           }o-do-o|   shop
-shopPayment           }o-le-o|   payment
+shopPayment           }o-up-o|   payment
 item                  }o-ri-o|   iCategory
 shop                  }o-do-o|   sCategory
 authorization         |o-ri-o|   users
