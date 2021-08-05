@@ -194,7 +194,7 @@ shopPayment           }o-ri-o|   payment
 item                  }o-ri-o|   iCategory
 shop                  }o-ri-o|   sCategory
 authorization         |o-ri-o|   users
-users                 }o-le-o|   countries
+users                 }o-do-o|   countries
 users                 }o-ri-o|   language                  
 
 @enduml
