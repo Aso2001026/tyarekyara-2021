@@ -182,7 +182,7 @@ package "AnyPort" as target_system {
 securityInformation   }o-ri-o|   countries
 review                }o-ri-o|   shop
 review                }o-do-o|   item
-review                }o-le-o|   tag
+review                }o-do-o|   tag
 review                }o-up-o|   users
 fixedPhrase           }o-ri-o|   language
 fixedPhrase           }o-le-o|   situation
