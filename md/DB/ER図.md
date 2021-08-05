@@ -74,7 +74,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-     entity "タグマスタ" as m_tag <m_tag> <<M,MASTER_MARK_COLOR>> {
+     entity "タグマスタ" as tag <m_tag> <<M,MASTER_MARK_COLOR>> {
         + tag_id [PK]
         --
         tag_name
@@ -100,12 +100,12 @@ package "AnyPort" as target_system {
         + item_id [PK]
         --
         item_name
-        iCategory_id
+        # iCategory_id [FK]
     }
     
     entity "店支払い方法マスタ" as shopPayment <m_shopPayment> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
-        + payment_code [PK]
+        + shop_id [PK][FK]
+        + payment_code [PK][FK]
         --
         reg_date
         upd_date
@@ -113,8 +113,8 @@ package "AnyPort" as target_system {
     }
     
     entity "店商品マスタ" as shopItems <m_shopItems> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
-        + item_id [PK]
+        + shop_id [PK][FK]
+        + item_id [PK][FK]
         --
         item_image
         item_explanation
@@ -179,7 +179,19 @@ package "AnyPort" as target_system {
     }
   }
 
-securityInformation   |o-ri-o{   countries
+securityInformation   }o-ri-o|   countries
+review                }o-ri-o|   shop
+review                }o-do-o|   item
+review                }o-le-o|   tag
+review                }o-up-o|   users
+fixedPhrase           }o-ri-o|   language
+shopItems             }o-up-o|   currency
+shopItems             }o-le-o|   shop
+shopItems             }o-ri-o|   item
+item                  }o-ri-o|   iCategory
+shopPayment           }o-do-o|   shop
+shopPayment           }o-ri-o|   payment
+
 
 @enduml
 ```
