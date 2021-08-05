@@ -103,108 +103,79 @@ package "AnyPort" as target_system {
         iCategory_id
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
+    entity "店支払い方法マスタ" as shopPayment <m_shopPayment> <<M,MASTER_MARK_COLOR>> {
         + shop_id [PK]
+        + payment_code [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
         reg_date
         upd_date
         del_date
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
+    entity "店商品マスタ" as shopItems <m_shopItems> <<M,MASTER_MARK_COLOR>> {
         + shop_id [PK]
+        + item_id [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
+        item_image
+        item_explanation
+        item_price
+        # currency_code [FK]
         reg_date
         upd_date
         del_date
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "状況マスタ" as situation <m_situation> <<M,MASTER_MARK_COLOR>> {
+        + situation_id [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
-        reg_date
-        upd_date
-        del_date
+        situation_name
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "言語マスタ" as language <m_language> <<M,MASTER_MARK_COLOR>> {
+        + language_code [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
-        reg_date
-        upd_date
-        del_date
+        language_name
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "定型文マスタ" as fixedPhrase <m_fixedPhrase> <<M,MASTER_MARK_COLOR>> {
+        + fixedphrase_id　[PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
-        reg_date
-        upd_date
-        del_date
+        fixedphrase_name
+        fixedphrase
+        situation_id
+        # language_code [FK]
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "支払い方法マスタ" as payment <m_payment> <<M,MASTER_MARK_COLOR>> {
+        + payment_code [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
-        reg_date
-        upd_date
-        del_date
+        payment_name
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "レビューテーブル" as review <t_review> <<T,TRANSACTION_MARK_COLOR>> {
+        + review_id [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
-        reg_date
+        review_comment
+        # shop_id [FK]
+        # item_id [FK]
+        # user_id [FK]
+        # tag_id [FK]
+        review_date
         upd_date
         del_date
+        good_count
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "治安情報テーブル" as securityInformation <t_securityInformation> <<T,TRANSACTION_MARK_COLOR>> {
+        + sInformation_id [PK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
+        sInformation
+        # country_code [FK]
+        sInformation_address
         reg_date
         upd_date
         del_date
+        good_count
     }
   }
 
