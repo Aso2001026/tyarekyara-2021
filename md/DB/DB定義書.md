@@ -32,7 +32,6 @@
 |ユーザーID|user_id|int(12)|○|○||
 |ユーザー名|user_name|varchar(20)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
-|氏名|user_name|varchar(20)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |国コード|country_code|varchar(3)||○|○|
@@ -41,18 +40,15 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_Owner
+## m_owner
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |オーナーID|owner_id|int(12)|○|○||
-|オーナー名|owner_name|varchar(20)||○||
-|オーナー画像ファイル名|user_image|varchar(200)||||
-|氏名|user_name|varchar(20)||○||
+|オーナー画像ファイル名|owner_image|varchar(200)||||
+|氏名|owner_name|varchar(20)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
-|国コード|country_code|varchar(3)||○|○|
-|言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
