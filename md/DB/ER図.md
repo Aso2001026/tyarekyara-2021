@@ -219,7 +219,7 @@ authorization         |o-ri-o|   users
 users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-ri-o|   users  
-searchHistory　　　　　　　　　　　　   }o-ri-o|   users
+searchHistory         }o-ri-o|   users
 
 @enduml
 ```
