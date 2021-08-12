@@ -189,7 +189,7 @@ package "AnyPort" as target_system {
         good_count
     }
     
-    entity "検索履歴テーブル" as securityInformation <t_securityInformation> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "検索履歴テーブル" as searchHistory <t_searchHistory> <<T,TRANSACTION_MARK_COLOR>> {
         + user_id [PK][FK]
         + searchHistory_id [PK]
         --
@@ -214,11 +214,12 @@ shopPayment           }o-do-o|   shop
 shopPayment           }o-up-o|   payment
 item                  }o-ri-o|   iCategory
 shop                  }o-do-o|   sCategory
-shop                  }o-do-o|   owner
+shop                  }o-le-o|   owner
 authorization         |o-ri-o|   users
 users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-ri-o|   users  
+searchHistory　　　　　　　　　　　　   }o-ri-o|   users
 
 @enduml
 ```
