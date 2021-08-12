@@ -41,6 +41,22 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
+## m_Owner
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|オーナーID|owner_id|int(12)|○|○||
+|オーナー名|owner_name|varchar(20)||○||
+|オーナー画像ファイル名|user_image|varchar(200)||||
+|氏名|user_name|varchar(20)||○||
+|電話番号|tel|varchar(20)||○||
+|メールアドレス|mail|varchar(100)||○||
+|国コード|country_code|varchar(3)||○|○|
+|言語コード|language_code|varchar(2)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
 ## m_authorization
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -92,6 +108,7 @@
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(500)||||
 |店画像ファイル名|shop_image|varchar(200)||||
+|オーナーID|owner_id|int(12)|||○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
