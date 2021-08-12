@@ -36,11 +36,22 @@ package "AnyPort" as target_system {
         --
         user_name
         user_image
-        user_name
         tel
         mail
         # country_code [FK]
         # language_code [FK]
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "オーナーマスタ" as owner  <m_owner> <<M,MASTER_MARK_COLOR>> {
+        + owner_id[PK]
+        --
+        owner_image
+        owner_name
+        tel
+        mail
         reg_date
         upd_date
         del_date
@@ -177,6 +188,16 @@ package "AnyPort" as target_system {
         del_date
         good_count
     }
+    
+    entity "検索履歴テーブル" as securityInformation <t_securityInformation> <<T,TRANSACTION_MARK_COLOR>> {
+        + user_id [PK][FK]
+        + searchHistory_id [PK]
+        --
+        searchWord
+        reg_date
+        upd_date
+        del_date
+    }
   }
 
 securityInformation   }o-ri-o|   countries
@@ -193,9 +214,11 @@ shopPayment           }o-do-o|   shop
 shopPayment           }o-up-o|   payment
 item                  }o-ri-o|   iCategory
 shop                  }o-do-o|   sCategory
+shop                  }o-do-o|   owner
 authorization         |o-ri-o|   users
 users                 }o-up-o|   countries
-users                 }o-ri-o|   language                  
+users                 }o-ri-o|   language    
+securityInformation   }o-ri-o|   users  
 
 @enduml
 ```
