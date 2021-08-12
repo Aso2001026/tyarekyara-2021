@@ -209,7 +209,8 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|int(12)|○|○|○|
-|検索ワード|searchWord|varchar(200)|○|○||
+|履歴ID|searchHistory_id|int(12)|○|○||
+|検索ワード|searchWord|varchar(200)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
