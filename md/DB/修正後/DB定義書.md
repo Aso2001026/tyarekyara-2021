@@ -40,18 +40,6 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_owner
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|オーナーID|owner_id|int(12)|○|○||
-|オーナー画像ファイル名|owner_image|varchar(200)||||
-|氏名|owner_name|varchar(20)||○||
-|電話番号|tel|varchar(20)||○||
-|メールアドレス|mail|varchar(100)||○||
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
 
 ## m_authorization
 
@@ -98,23 +86,12 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○||
-|ショップカテゴリID|sCategory_id|int(12)||○|○|
 |店名|shop_name|varchar(50)||○||
-|郵便番号|shop_postal_code|varchar(20)||○||
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(500)||||
-|店画像ファイル名|shop_image|varchar(200)||||
-|オーナーID|owner_id|int(12)|||○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
-
-## m_item
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|商品ID|item_id|int(12)|○|○||
-|商品名|item_name|varchar(50)||○||
-|商品カテゴリID|iCategory_id|int(12)||○|○|
 
 ## m_shopPayment
 
@@ -170,21 +147,6 @@
 |---|-----|--|--|--|--|
 |支払い方法コード|payment_code|int(12)|○|○||
 |支払い方法名|payment_name|varchar(100)||○||]
-
-## t_review
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|レビューid|review_id|int(12)|○|○||
-|レビューコメント|review_comment|varchar(500)||○||
-|ショップID|shop_id|int(12)||○|○|
-|商品ID|item_id|int(12)||○|○|
-|ユーザーID|user_id|date||○|○|
-|タグID|tag_id|int(12)||○|○|
-|レビュー日|review_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
-|いいね|good_count|int(12)||○||
 
 
 ## t_securityInformation
