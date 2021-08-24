@@ -40,18 +40,7 @@ package "AnyPort" as target_system {
         mail
         # country_code [FK]
         # language_code [FK]
-        reg_date
-        upd_date
-        del_date
-    }
-    
-     entity "オーナーマスタ" as owner  <m_owner> <<M,MASTER_MARK_COLOR>> {
-        + owner_id[PK]
-        --
-        owner_image
-        owner_name
-        tel
-        mail
+        # currency_code [FK]
         reg_date
         upd_date
         del_date
@@ -67,7 +56,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "店カテゴリマスタ" as sCategory <m_sCategory> <<M,MASTER_MARK_COLOR>> {
+    entity "店カテゴリIDマスタ" as sCategoryId <m_sCategory> <<M,MASTER_MARK_COLOR>> {
         + sCategory_id [PK]
         --
         sCategory_name
@@ -76,7 +65,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "商品カテゴリマスタ" as iCategory <m_iCategory> <<M,MASTER_MARK_COLOR>> {
+    entity "商品カテゴリIDマスタ" as iCategoryId <m_iCategory> <<M,MASTER_MARK_COLOR>> {
         + iCategory_id [PK]
         --
         iCategory_name
@@ -85,38 +74,23 @@ package "AnyPort" as target_system {
         del_date
     }
     
-     entity "タグマスタ" as tag <m_tag> <<M,MASTER_MARK_COLOR>> {
-        + tag_id [PK]
-        --
-        tag_name
-        reg_date
-        del_date
-    }
-    
     entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
         + shop_id [PK]
         --
-        # sCategory_id [FK]
         shop_name
         shop_postal_code
         shop_address
         shop_explanation
         shop_image
+        credit_flag
         reg_date
         upd_date
         del_date
     }
     
-    entity "商品マスタ" as item <m_item> <<M,MASTER_MARK_COLOR>> {
-        + item_id [PK]
-        --
-        item_name
-        # iCategory_id [FK]
-    }
-    
-    entity "店支払い方法マスタ" as shopPayment <m_shopPayment> <<M,MASTER_MARK_COLOR>> {
+     entity "店カテゴリマスタ" as shopCategory <m_shopCategory> <<M,MASTER_MARK_COLOR>> {
         + shop_id [PK][FK]
-        + payment_code [PK][FK]
+        + sCategory_id [PK][FK]
         --
         reg_date
         upd_date
@@ -127,10 +101,12 @@ package "AnyPort" as target_system {
         + shop_id [PK][FK]
         + item_id [PK][FK]
         --
+        item_name
         item_image
         item_explanation
         item_price
         # currency_code [FK]
+        # language_code [FK]
         reg_date
         upd_date
         del_date
@@ -157,26 +133,6 @@ package "AnyPort" as target_system {
         # language_code [FK]
     }
     
-    entity "支払い方法マスタ" as payment <m_payment> <<M,MASTER_MARK_COLOR>> {
-        + payment_code [PK]
-        --
-        payment_name
-    }
-    
-    entity "レビューテーブル" as review <t_review> <<T,TRANSACTION_MARK_COLOR>> {
-        + review_id [PK]
-        --
-        review_comment
-        # shop_id [FK]
-        # item_id [FK]
-        # user_id [FK]
-        # tag_id [FK]
-        review_date
-        upd_date
-        del_date
-        good_count
-    }
-    
     entity "治安情報テーブル" as securityInformation <t_securityInformation> <<T,TRANSACTION_MARK_COLOR>> {
         + sInformation_id [PK]
         --
@@ -198,23 +154,37 @@ package "AnyPort" as target_system {
         upd_date
         del_date
     }
+    
+    entity "掲示板テーブル" as bulletinBoard <t_bulletinBoard> <<T,TRANSACTION_MARK_COLOR>> {
+        + bulletinBoard_id [PK]
+        --
+        # user_id [FK]
+        bulletinBoard_title
+        # language_code [FK]
+        reg_date
+        upd_date
+        del_date
+    }
+    
+    entity "掲示板コメントテーブル" as bulletinBoardComment <t_bulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
+        + bulletinBoard_id [PK][FK]
+        + comment_id [PK]
+        --
+        # user_id [FK]
+        comment
+        # language_code [FK]
+        reg_date
+        upd_date
+        del_date
+    }
   }
 
 securityInformation   }o-ri-o|   countries
-review                }o-le-o|   shop
-review                }o-do-o|   item
-review                }o-do-o|   tag
-review                }o-up-o|   users
 fixedPhrase           }o-le-o|   language
 fixedPhrase           }o-do-o|   situation
 shopItems             }o-do-o|   currency
 shopItems             }o-le-o|   shop
-shopItems             }o-ri-o|   item
-shopPayment           }o-do-o|   shop
-shopPayment           }o-up-o|   payment
-item                  }o-ri-o|   iCategory
-shop                  }o-do-o|   sCategory
-shop                  }o-le-o|   owner
+shop                  }o-do-o|   sCategoryId
 authorization         |o-ri-o|   users
 users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
