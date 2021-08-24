@@ -184,9 +184,9 @@ securityInformation   }o-ri-o|   countries
 fixedPhrase           }o-le-o|   language
 fixedPhrase           }o-do-o|   situation
 shopItems             }o-do-o|   currency
-shopItems             }o-le-o|   shop
+shopItems             }o-up-o|   shop
 shopItems             }o-le-o|   iCategoryId
-shopItems             }o-le-o|   language
+shopItems             }o-ri-o|   language
 shop                  }o-do-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
 authorization         |o-ri-o|   users
