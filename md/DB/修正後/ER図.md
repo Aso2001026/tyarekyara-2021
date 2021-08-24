@@ -99,9 +99,10 @@ package "AnyPort" as target_system {
     
     entity "店商品マスタ" as shopItems <m_shopItems> <<M,MASTER_MARK_COLOR>> {
         + shop_id [PK][FK]
-        + item_id [PK][FK]
+        + item_id [PK]
         --
         item_name
+        # iCategory_id [FK]
         item_image
         item_explanation
         item_price
