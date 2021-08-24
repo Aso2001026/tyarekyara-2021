@@ -41,7 +41,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "店カテゴリIDマスタ" as sCategoryId <m_sCategory> <<M,MASTER_MARK_COLOR>> {
+    entity "カテゴリマスタ" as sCategoryId <m_sCategory> <<M,MASTER_MARK_COLOR>> {
         + sCategory_id [PK]
         --
         sCategory_name
@@ -73,7 +73,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-     entity "店カテゴリマスタ" as shopCategory <m_shopCategory> <<M,MASTER_MARK_COLOR>> {
+     entity "店カテゴリテーブル" as shopCategory <t_shopCategory> <<T,TRANSACTION_MARK_COLOR>> {
         + shop_id [PK][FK]
         + sCategory_id [PK][FK]
         --
