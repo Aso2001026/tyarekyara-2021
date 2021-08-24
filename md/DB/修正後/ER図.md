@@ -182,9 +182,9 @@ package "AnyPort" as target_system {
 securityInformation   }o-ri-o|   countries
 fixedPhrase           }o-up-o|   language
 fixedPhrase           }o-do-o|   situation
-shopItems             }o-do-o|   countries
-shopItems             }o-up-o|   shop
-shopItems             }o-le-o|   iCategoryId
+shopItems             }o-up-o|   countries
+shopItems             }o-le-o|   shop
+shopItems             }o-do-o|   iCategoryId
 shopItems             }o-ri-o|   language
 shopItems             }o-up-o|   users
 shop                  }o-le-o|   shopCategory
