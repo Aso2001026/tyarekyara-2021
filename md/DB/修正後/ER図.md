@@ -106,6 +106,7 @@ package "AnyPort" as target_system {
         item_image
         item_explanation
         item_price
+        # user_id [FK]
         # currency_code [FK]
         # language_code [FK]
         reg_date
@@ -187,6 +188,7 @@ shopItems             }o-do-o|   currency
 shopItems             }o-up-o|   shop
 shopItems             }o-le-o|   iCategoryId
 shopItems             }o-ri-o|   language
+shopItems             }o-ri-o|   users
 shop                  }o-le-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
 authorization         |o-le-o|   users
