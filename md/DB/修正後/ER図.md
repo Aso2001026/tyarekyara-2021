@@ -18,12 +18,6 @@ package "AnyPort" as target_system {
       マスターテーブルを M、トランザクションを T などで表記
       １文字なら "主" とか "従" まど日本語でも記載可能
      '/
-
-    entity "通貨マスタ" as currency <m_currency> <<M,MASTER_MARK_COLOR>> {
-        + currency_code [PK]
-        --
-        currency_name
-    }
     
     entity "国名マスタ" as countries <m_countries> <<M,MASTER_MARK_COLOR>> {
         + country_code [PK]
