@@ -9,20 +9,14 @@
 
 # データベース設計図
 
-## m_currency
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|通貨コード|currency_code|varchar(3)|○|○||
-|通貨名|currency_name|varchar(20)||○||
-
-
 ## m_countries
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |国コード|country_code|varchar(3)|○|○||
 |国名|country_name|varchar(50)||○||
+|通貨コード|currency_code|varchar(3)|○|○||
+|通貨名|currency_name|varchar(20)||○||
 
 
 ## m_users
