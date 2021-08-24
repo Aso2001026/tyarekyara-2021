@@ -23,6 +23,8 @@ package "AnyPort" as target_system {
         + country_code [PK]
         --
         country_name
+        currency_code
+        currency_name
     }
     
     entity "ユーザーマスタ" as users  <m_users> <<M,MASTER_MARK_COLOR>> {
