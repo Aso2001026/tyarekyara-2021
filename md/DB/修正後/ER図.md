@@ -103,7 +103,11 @@ package "AnyPort" as target_system {
         --
         item_name
         # iCategory_id [FK]
-        item_image
+        item_image1
+        item_image2
+        item_image3
+        item_image4
+        item_image5
         item_explanation
         item_price
         # user_id [FK]
