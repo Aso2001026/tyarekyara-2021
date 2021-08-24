@@ -35,15 +35,6 @@ package "AnyPort" as target_system {
         # country_code [FK]
         # language_code [FK]
         # currency_code [FK]
-        reg_date
-        upd_date
-        del_date
-    }
-    
-    entity "ログインマスタ" as authorization <m_authorization> <<M,MASTER_MARK_COLOR>> {
-        + login_id [PK]
-        --
-        # user_id [FK]
         user_pass
         reg_date
         upd_date
