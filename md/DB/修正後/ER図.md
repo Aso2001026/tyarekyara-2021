@@ -179,7 +179,7 @@ package "AnyPort" as target_system {
     }
   }
 
-securityInformation   }o-ri-o|   countries
+securityInformation   }o-le-o|   countries
 fixedPhrase           }o-up-o|   language
 fixedPhrase           }o-do-o|   situation
 shopItems             }o-ri-o|   countries
