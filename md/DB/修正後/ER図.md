@@ -185,6 +185,7 @@ fixedPhrase           }o-le-o|   language
 fixedPhrase           }o-do-o|   situation
 shopItems             }o-do-o|   currency
 shopItems             }o-le-o|   shop
+shopItems             }o-le-o|   iCategoryId
 shop                  }o-do-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
 authorization         |o-ri-o|   users
