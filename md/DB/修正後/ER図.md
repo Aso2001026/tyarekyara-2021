@@ -187,7 +187,7 @@ shopItems             }o-do-o|   currency
 shopItems             }o-up-o|   shop
 shopItems             }o-le-o|   iCategoryId
 shopItems             }o-ri-o|   language
-shop                  }o-do-o|   shopCategory
+shop                  }o-le-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
 authorization         |o-le-o|   users
 users                 }o-up-o|   countries
