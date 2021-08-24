@@ -104,7 +104,11 @@
 |商品ID|item_id|int(12)|○|○||
 |商品名|item_name|varchar(100)||○||
 |商品カテゴリID|iCategory_id|int(12)||○|○|
-|商品画像ファイル名|item_image|varchar(200)||||
+|商品画像ファイル名1|item_image1|varchar(200)||||
+|商品画像ファイル名2|item_image2|varchar(200)||||
+|商品画像ファイル名3|item_image3|varchar(200)||||
+|商品画像ファイル名4|item_image4|varchar(200)||||
+|商品画像ファイル名5|item_image5|varchar(200)||||
 |商品説明|item_explanation|varchar(500)||||
 |単価|item_price|int(30)||○||
 |ユーザーID|user_id|int(12)||○|○|
