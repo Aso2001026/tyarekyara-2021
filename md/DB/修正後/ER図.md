@@ -194,7 +194,7 @@ users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-ri-o|   users  
 searchHistory         }o-ri-o|   users
-bulletinBoard         }o-ri-o|   users
+bulletinBoard         }o-up-o|   users
 bulletinBoard         }o-le-o|   language
 bulletinBoardComment  }o-up-o|   users
 bulletinBoardComment  }o-up-o|   bulletinBoard
