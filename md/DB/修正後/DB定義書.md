@@ -3,7 +3,7 @@
 [ER図はこちら](https://github.com/Aso2001026/tyarekyara-2021/blob/main/md/DB/%E4%BF%AE%E6%AD%A3%E5%BE%8C/ER%E5%9B%B3.md)
 
 *****
-<img src="../../../img/DB/AnyPort_ER_var2.png" width="500">
+<img src="../../../img/DB/AnyPort_ER_var3.png" width="500">
 
 *****
 
