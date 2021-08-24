@@ -164,6 +164,8 @@ package "AnyPort" as target_system {
         # user_id [FK]
         comment
         # language_code [FK]
+        commentDestination_id
+        good_count
         reg_date
         upd_date
         del_date
