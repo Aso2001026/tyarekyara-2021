@@ -189,7 +189,7 @@ shopItems             }o-le-o|   iCategoryId
 shopItems             }o-ri-o|   language
 shop                  }o-do-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
-authorization         |o-ri-o|   users
+authorization         |o-le-o|   users
 users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-ri-o|   users  
