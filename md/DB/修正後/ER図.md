@@ -192,10 +192,10 @@ users                 }o-ri-o|   language
 securityInformation   }o-ri-o|   users  
 searchHistory         }o-ri-o|   users
 bulletinBoard         }o-ri-o|   users
-bulletinBoard         }o-le-o|   language_code
+bulletinBoard         }o-le-o|   language
 bulletinBoardComment  }o-up-o|   users
 bulletinBoardComment  }o-up-o|   bulletinBoard
-bulletinBoardComment  }o-do-o|   language_code
+bulletinBoardComment  }o-do-o|   language
 
 @enduml
 ```
