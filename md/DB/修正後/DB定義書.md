@@ -155,6 +155,7 @@
 |ユーザーID|user_id|int(12)|○|○|○|
 |履歴ID|searchHistory_id|int(12)|○|○||
 |検索ワード|searchWord|varchar(200)||○||
+|検索フラグ|searchFlag|int(10)||○||
 |言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
