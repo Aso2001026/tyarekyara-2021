@@ -184,7 +184,8 @@ fixedPhrase           }o-le-o|   language
 fixedPhrase           }o-do-o|   situation
 shopItems             }o-do-o|   currency
 shopItems             }o-le-o|   shop
-shop                  }o-do-o|   sCategoryId
+shop                  }o-do-o|   shopCategory
+sCategoryId           }o-do-o|   shopCategory
 authorization         |o-ri-o|   users
 users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
