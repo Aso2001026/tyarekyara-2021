@@ -188,7 +188,7 @@ shopItems             }o-do-o|   currency
 shopItems             }o-up-o|   shop
 shopItems             }o-le-o|   iCategoryId
 shopItems             }o-ri-o|   language
-shopItems             }o-ri-o|   users
+shopItems             }o-up-o|   users
 shop                  }o-le-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
 authorization         |o-le-o|   users
