@@ -36,6 +36,7 @@
 |メールアドレス|mail|varchar(100)||○||
 |国コード|country_code|varchar(3)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
+|通貨コード|currency_code|varchar(3)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -52,7 +53,7 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_sCategory
+## m_sCategoryId
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -62,7 +63,7 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_iCategory
+## m_iCategoryId
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -70,15 +71,6 @@
 |カテゴリ名|iCategory_name|varchar(50)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
-|削除日|del_date|date||||
-
-## m_tag
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|タグID|tag_id|int(12)|○|○||
-|タグ名|tag_name|varchar(50)||○||
-|登録日|reg_date|date||○||
 |削除日|del_date|date||||
 
 ## m_shop
@@ -89,16 +81,17 @@
 |店名|shop_name|varchar(50)||○||
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(500)||||
+|クレジットカードフラグ|credit_flag|boolean||||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
-## m_shopPayment
+## m_shopCategory
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○|○|
-|支払いコード|payment_code|int(12)|○|○|○|
+|ショップカテゴリID|sCategory_id|int(12)|○|○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -108,11 +101,14 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○|○|
-|商品ID|item_id|int(12)|○|○|○|
+|商品ID|item_id|int(12)|○|○||
+|商品名|item_name|varchar(100)|○|○||
 |商品画像ファイル名|item_image|varchar(200)||||
 |商品説明|item_explanation|varchar(500)||||
 |単価|item_price|int(30)||○||
+|ユーザーID|user_id|int(12)||○|○|
 |通貨コード|currency_code|varchar(3)||○|○|
+|言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -141,26 +137,16 @@
 |状況ID|situation_id|int(12)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
 
-## m_payment
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|支払い方法コード|payment_code|int(12)|○|○||
-|支払い方法名|payment_name|varchar(100)||○||]
-
-
 ## t_securityInformation
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |治安情報id|sInformation_id|int(12)|○|○||
 |治安情報|sInformation|varchar(500)||○||
-|国コード|country_code|varchar(3)||○|○|
 |発生場所|sInformation_address|varchar(100)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
-|いいね|good_count|int(12)||○||
 
 ## t_searchHistory
 
@@ -169,10 +155,57 @@
 |ユーザーID|user_id|int(12)|○|○|○|
 |履歴ID|searchHistory_id|int(12)|○|○||
 |検索ワード|searchWord|varchar(200)||○||
+|言語コード|language_code|varchar(2)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+## t_searchHistory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ユーザーID|user_id|int(12)|○|○|○|
+|履歴ID|searchHistory_id|int(12)|○|○||
+|検索ワード|searchWord|varchar(200)||○||
+|言語コード|language_code|varchar(2)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+## t_searchHistory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ユーザーID|user_id|int(12)|○|○|○|
+|履歴ID|searchHistory_id|int(12)|○|○||
+|検索ワード|searchWord|varchar(200)||○||
+|言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
 
+## t_bulletinBoard
 
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|掲示板ID|bulletinBoard_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)||○|○|
+|掲示板タイトル|bulletinBoard_title|varchar(200)||○||
+|言語コード|language_code|varchar(2)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
 
+## t_bulletinBoardComment
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|掲示板ID|bulletinBoard_id|int(12)|○|○|○|
+|コメントID|comment_id|int(12)|○|○|○|
+|ユーザーID|user_id|int(12)||○|○|
+|コメント|comment|varchar(200)||○||
+|言語コード|language_code|varchar(2)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
