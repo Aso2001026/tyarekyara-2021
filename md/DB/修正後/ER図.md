@@ -195,7 +195,7 @@ shopItems             }o-ri-o|   language
 shopItems             }o-up-o|   users
 shop                  }o-le-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
-users                 }o-up-o|   countries
+users                 }o-le-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-ri-o|   users  
 searchHistory         }o-le-o|   users
@@ -204,7 +204,7 @@ bulletinBoard         }o-le-o|   language
 bulletinBoardComment  }o-up-o|   users
 bulletinBoardComment  }o-up-o|   bulletinBoard
 bulletinBoardComment  }o-do-o|   language
-favorite              }o-ri-o|   users
-favorite              }o-le-o|   shop
+favorite              }o-do-o|   users
+favorite              }o-do-o|   shop
 @enduml
 ```
