@@ -204,7 +204,7 @@ bulletinBoard         }o-le-o|   language
 bulletinBoardComment  }o-up-o|   users
 bulletinBoardComment  }o-up-o|   bulletinBoard
 bulletinBoardComment  }o-do-o|   language
-favorite              }o-ri-o|   users
+favorite              }o-do-o|   users
 favorite              }o-do-o|   shop
 @enduml
 ```
