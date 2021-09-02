@@ -173,6 +173,16 @@ package "AnyPort" as target_system {
         upd_date
         del_date
     }
+    
+    entity "お気に入りテーブル" as favorite <t_favorite> <<T,TRANSACTION_MARK_COLOR>> {
+        + favorite_id [PK]
+        + user_id [PK][FK]
+        --
+        # shop_id [FK]
+        reg_date
+        upd_date
+        del_date
+    }
   }
 
 securityInformation   }o-le-o|   countries
@@ -194,6 +204,7 @@ bulletinBoard         }o-le-o|   language
 bulletinBoardComment  }o-up-o|   users
 bulletinBoardComment  }o-up-o|   bulletinBoard
 bulletinBoardComment  }o-do-o|   language
-
+favorite              }o-ri-o|   users
+favorite              }o-le-o|   shop
 @enduml
 ```
