@@ -187,3 +187,14 @@
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
+
+## t_favorite
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|お気に入りID|favorite_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)|○|○|○|
+|ショップID|shop_id|int(12)||○|○|
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
