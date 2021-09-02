@@ -195,7 +195,7 @@ shopItems             }o-ri-o|   language
 shopItems             }o-up-o|   users
 shop                  }o-le-o|   shopCategory
 sCategoryId           }o-do-o|   shopCategory
-users                 }o-le-o|   countries
+users                 }o-up-o|   countries
 users                 }o-ri-o|   language    
 securityInformation   }o-do-o|   users  
 searchHistory         }o-le-o|   users
