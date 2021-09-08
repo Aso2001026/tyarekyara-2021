@@ -14,9 +14,9 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |国コード|country_code|varchar(3)|○|○||
-|国名|country_name|varchar(50)||○||
-|通貨コード|currency_code|varchar(3)|○|○||
-|通貨名|currency_name|varchar(20)||○||
+|国名|country_name|varchar(100)||○||
+|通貨コード|currency_code|varchar(3)||○||
+|通貨名|currency_name|varchar(100)||○||
 
 
 ## m_users
@@ -31,17 +31,6 @@
 |国コード|country_code|varchar(3)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
 |通貨コード|currency_code|varchar(3)||○|○|
-|パスワード|user_pass|varchar(20)||○||
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
-
-## m_authorization
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|ログインID|login_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)||○|○|
 |パスワード|user_pass|varchar(20)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
