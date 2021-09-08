@@ -129,8 +129,8 @@ package "AnyPort" as target_system {
         + sInformation_id [PK]
         --
         sInformation
-        # country_code [FK]
         sInformation_address
+        # user_id [FK]
         reg_date
         upd_date
         del_date
