@@ -36,7 +36,6 @@ package "AnyPort" as target_system {
         mail
         # country_code [FK]
         # language_code [FK]
-        # currency_code [FK]
         user_pass
         reg_date
         upd_date
