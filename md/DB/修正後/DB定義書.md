@@ -24,13 +24,12 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|int(12)|○|○||
-|ユーザー名|user_name|varchar(20)||○||
+|ユーザー名|user_name|varchar(30)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |国コード|country_code|varchar(3)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
-|通貨コード|currency_code|varchar(3)||○|○|
 |パスワード|user_pass|varchar(20)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
@@ -41,7 +40,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップカテゴリID|sCategory_id|int(12)|○|○||
-|カテゴリ名|sCategory_name|varchar(50)||○||
+|カテゴリ名|sCategory_name|varchar(100)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -51,7 +50,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |商品カテゴリID|iCategory_id|int(12)|○|○||
-|カテゴリ名|iCategory_name|varchar(50)||○||
+|カテゴリ名|iCategory_name|varchar(100)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -61,11 +60,11 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○||
-|店名|shop_name|varchar(50)||○||
+|店名|shop_name|varchar(100)||○||
 |住所|shop_address|varchar(100)||○||
-|店説明|shop_explanation|varchar(500)||||
+|店説明|shop_explanation|varchar(1000)||||
 |店画像ファイル名|shop_image|varchar(200)||||
-|クレジットカードフラグ|credit_flag|boolean||||
+|クレジットカードフラグ|credit_flag|int(1)||||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -107,14 +106,14 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |状況ID|situation_id|int(12)|○|○||
-|状況名|situation_name|varchar(50)||○||
+|状況名|situation_name|varchar(100)||○||
 
 ## m_language
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |言語コード|language_code|varchar(2)|○|○||
-|言語名|language_name|varchar(50)||○||
+|言語名|language_name|varchar(100)||○||
 
 ## m_fixedPhrase
 
@@ -133,9 +132,11 @@
 |治安情報id|sInformation_id|int(12)|○|○||
 |治安情報|sInformation|varchar(500)||○||
 |発生場所|sInformation_address|varchar(100)||○||
+|ユーザーID|user_id|int(12)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
+|いいね(参考になった)|good_count|int(12)||||
 
 ## t_searchHistory
 
