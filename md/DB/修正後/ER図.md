@@ -142,7 +142,6 @@ package "AnyPort" as target_system {
         + searchHistory_id [PK]
         --
         searchWord
-        search_flag
         reg_date
         upd_date
         del_date
