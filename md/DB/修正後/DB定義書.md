@@ -26,7 +26,6 @@
 |ユーザーID|user_id|int(12)|○|○||
 |ユーザー名|user_name|varchar(30)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
-|電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |国コード|country_code|varchar(3)||○|○|
 |言語コード|language_code|varchar(2)||○|○|
