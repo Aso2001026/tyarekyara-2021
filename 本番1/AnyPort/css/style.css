@@ -1,0 +1,455 @@
+@import "sanitize.css";
+@import "common.css";
+
+.login {
+    width: auto;
+    height: 450px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 4px #a0a0a0;
+}
+
+.BreadcrumbTrail {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.loginTitle{
+    text-align: center;
+    border-top: solid 4px #a0a0a0;
+    border-bottom: solid 4px #a0a0a0;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mailAddress{
+    border-bottom: solid 4px #a0a0a0;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.password{
+    border-bottom: solid 4px #a0a0a0;
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nextLogin{
+    text-align: center;
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nextLogin .forgetPassword{
+    text-align: right;
+}
+
+.loginButton button{
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 24px;
+    background-color: white;
+}
+
+.login label{
+    width: 130px;
+    text-align: left;
+    display: inline-block;
+}
+
+.singUp {
+    width: auto;
+    height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 4px #a0a0a0;
+    margin-top: 20px;
+}
+
+.singUp .singUpTitle{
+    text-align: center;
+    border-top: solid 4px #a0a0a0;
+    border-bottom: solid 4px #a0a0a0;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+}
+
+.singUpButton{
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 50px;
+    font-size: 24px;
+    display:block;
+    border: solid 2px black;
+    margin-top: 10px;
+    background-color: #a0a0a0;
+    text-decoration: none;
+    color: black;
+}
+
+.singUpButton:visited{
+    color: black;
+}
+
+.singUp .termsOfService{
+    margin-top: 10px;
+    width: 70%;
+    height: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: lightslategray;
+}
+
+.singUpInput{
+    width: auto;
+    height: 600px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.singUpForm {
+    width: auto;
+    height: 500px;
+    border: solid 4px #a0a0a0;
+}
+
+.singUpInputTitle{
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+}
+
+.singUpNotes{
+    text-align: center;
+    height: 50px;
+    font-size: 18px;
+    display:block;
+}
+
+.singUpForm label{
+    width: 170px;
+    text-align: left;
+    display: inline-block;
+}
+
+.singUpForm label:after{
+    content: "※";
+    color: red;
+}
+
+.singUpForm input{
+    background-color: aliceblue;
+}
+
+.singUpName{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+}
+
+.singUpKanaName{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.singUpMail{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.singUpPasswordBox{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.singUpPasswordCheckBox{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.singUpLanguage{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.singUpCountry{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.singUpCheckButton button{
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 24px;
+    background-color: white;
+}
+
+.beforePage {
+    color: black;
+    padding-bottom: 30px;
+}
+
+.beforePage:before{
+    display: inline-block;
+    content: "";
+    margin-top: 6px;
+    margin-right: 7px;
+    width: 10px;
+    height: 10px;
+    vertical-align: top;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.rate{
+    /*width: auto;*/
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*border: solid 4px black;*/
+    /* border-radius: 40px; */
+
+text-align: center;
+    padding: 0.5em 1em;
+    margin: 2em auto;
+    width: 80vw;
+    color: #ff7d6e;
+    background: #696969;
+    border: solid 20px #fff;
+    border-bottom: solid 60px #fff;
+}
+
+.rateTitle {
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+}
+
+.rateTitle:after{
+    content: "※レートの更新は１日に一回だけのため参考程度にお使いください";
+    color: red;
+}
+
+.ratePrice{
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 170px;
+    float: left;
+    clear: both;
+}
+
+.rateForm{
+    margin-top: 5%;
+}
+
+.rateButton{
+    margin-left: 15%;
+    margin-right: 15%;
+    float: right;
+    clear: both;
+    background-color: #81B9ED;
+}
+
+.rateResult{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.translate{
+    width: auto;
+    height: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.translateTitle {
+    text-align: left;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text{
+    display: flex;
+    margin: 30px 0;
+    height: 160px;
+}
+
+.translateInput{
+    margin-right: 30px;
+}
+
+.rightArrow{
+    line-height: 160px;
+    margin-right: 30px;
+}
+.googleMap {
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.googleMapTitle{
+    text-align: left;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.MyInformation{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 500px;
+}
+
+.MyInformationNav{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+}
+
+.MyInformationNav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.MyInformationTitle{
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+}
+
+
+.MyInformation table{
+    width: auto;
+    border: solid 4px #a0a0a0;
+    display:block;
+}
+
+
+.MyInformation th{
+    margin-right: 10px;
+    margin-left: 10px;
+    display:block;
+}
+
+.MyInformationButton{
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 50px;
+    font-size: 24px;
+    display:block;
+    border: solid 2px black;
+    margin-top: 10px;
+    background-color: #a0a0a0;
+    text-decoration: none;
+    color: black;
+}
+
+.checkPassword {
+    width: auto;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 4px #a0a0a0;
+}
+
+
+.completionTitle{
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.toppageButton{
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 50px;
+    font-size: 24px;
+    display:block;
+    border: solid 2px black;
+    margin-top: 10px;
+    background-color: #a0a0a0;
+    text-decoration: none;
+    color: black;
+}
+
+.completion{
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.completion p{
+    text-align: center;
+    border: solid 4px #a0a0a0;
+    margin-bottom: 30px;
+}
+
+.mailInput{
+    width: auto;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid 4px #a0a0a0;
+}
+
+.hama{
+text-align: center;
+    padding: 0.5em 1em;
+    margin: 2em auto; 
+    width: 40vw;
+    color:#ffff;
+    background-color: #696969;
+    border: solid 20px #fff;
+    border-bottom: solid 60px #fff;
+}

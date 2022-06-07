@@ -1,0 +1,108 @@
+@import "sanitize.css";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu{
+    width: auto;
+    height: 100px;
+    background-image: url("../image/maldives-1993704_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.global-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 60px;
+    clear: both;
+    float: left;
+    margin: 20px;
+    display: block;
+}
+
+.global-nav{
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+.global-nav li{
+    float: left;
+    margin: auto 10px;
+    line-height: 100px;
+}
+
+.siteTitle {
+    width: auto;
+    height: 50px;
+}
+
+.siteTitle h1 {
+    float: left;
+    height: 50px;
+    margin: 0 20px;
+    padding: 0;
+
+}
+
+.siteTitle h2 {
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.accountMenu {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.myPage{
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border-color: cornflowerblue;
+    color: lightslategray;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+.myPage:before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: -3px 5px 0 3px;
+    background: url("../image/userIcon.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.newRegister_login{
+    color: white;
+    text-decoration: none;
+}

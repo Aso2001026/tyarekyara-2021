@@ -1,0 +1,204 @@
+@import "sanitize.css";
+@import "common.css";
+
+
+
+.sample {
+    padding-top: 38px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 480px;
+
+}
+.sample .item {
+    width: 25%;
+    border: 2px solid #111;
+    background: #fff;
+    box-sizing: border-box;
+    color: #000;
+    font-size:10px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 1%;
+    margin-bottom: 20px;
+}
+.sample :hover {
+    background-color: #DDDDDD;
+}
+.box {
+    margin: 20px 0;
+    background: #f1f1f1;
+    width: 350px;
+}
+.box .box-title {
+    width: 320px;
+    font-size: 15px;
+    background: red;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box {
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    position: relative;
+    left: 600px;
+}
+
+
+
+.form{
+    text-align: center;
+
+}
+.textbox{
+    width: 45%;
+    height: 40px;
+}
+.box a{
+    color: blue;
+}
+.sample a{
+    color: black;
+}
+
+table{
+    width: 40%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+table th,table td{
+    padding: 10px 2%;
+    text-align: left;
+}
+
+
+table tr:nth-child(odd){
+    background-color: #eee;
+
+}
+.sample1 h1{
+    padding: 1%;
+    border-left: 15px solid red;
+}
+
+.list {
+    text-align: right;
+    position: relative;
+    right: 190px;
+    margin-top: 50px;
+
+
+}
+
+.list li {
+
+    display: inline;
+    padding:10px 10px;
+    border:2px #ccc solid;color:#000053;
+    border-radius: 5px / 5px;
+}
+
+.list .this {
+    background-color:#777;color:#fff;
+}
+.list a{
+    color: blue;
+}
+.list{
+    margin-right: 13%;
+}
+
+#title{
+    display: inline;
+}
+
+
+article {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-left: 24%;
+    padding: 10px;
+
+}
+article figure {
+    margin-right: 30px;
+    width: 100px;
+    height: 100px
+}
+article figure img {
+    min-width: 100px;
+    max-width: 100%;
+    vertical-align: top;
+}
+.text_content a{
+    color: black;
+}
+.c h2{
+    padding: 2px;
+    border-left: 15px solid red;
+    margin-left: 60px;
+}
+.c{
+    margin-left:17%;
+    margin-top:35px;
+}
+.d h3 {
+    position: relative;
+    padding-left: 25px;
+    margin-top: 40%;
+}
+
+.d h3:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119, 195, 223);
+}
+.d h3:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 10%;
+    border-bottom: solid 3px rgb(119, 195, 223);
+}
+
+.simple-list {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    list-style:none;
+    font-size:16px;
+    margin-right: 70%;
+    padding:0;
+}
+.simple-list li {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+    margin:0;
+}
+.simple-list li:hover {
+    opacity:0.8;
+}
+.simple-list li a {
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:#000;
+}
+.simple-list li span {
+    font-size:12px;
+    color:#666;
+}

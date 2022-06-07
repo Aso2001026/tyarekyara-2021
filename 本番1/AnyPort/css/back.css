@@ -1,0 +1,29 @@
+.back {
+    background-image:url("../image/back1.png");
+    background-repeat: no-repeat;
+background-position: top 0;
+background-attachment:scroll;
+background-size: cover;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+.back:before{
+  /*content: '';*/
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+/* /画像の端までぼけてしまうため切り落とすため/ */
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
