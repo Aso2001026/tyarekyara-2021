@@ -2,7 +2,7 @@
 <?php
     //ydlp_inputから遷移した場合（APIの処理）
     $url = 'https://map.yahooapis.jp/search/local/V1/localSearch?appid=';
-    $appid = 'dj00aiZpPVJ6akRDa3pQdlA3YiZzPWNvbnN1bWVyc2VjcmV0Jng9ZTc-';
+    $appid = 'appid';
     $keyword = $_POST['keyword'];
     $category = $_POST['category'];
 
