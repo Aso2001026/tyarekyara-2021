@@ -24,7 +24,7 @@ if(isset($_POST["fromText"])){
     $headers = array(
         "Content-Type: application/json; charset=UTF-8",
         "Accept: application/jwt",
-        "Ocp-Apim-Subscription-Key: e733001482414e8ba852c807832ce55a",
+        "Ocp-Apim-Subscription-Key: APIkey",
         "Content-Length: ". strlen($body),
         "Authorization: ". $key
     );
