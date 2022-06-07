@@ -80,7 +80,7 @@ $return = "<button type='button' onclick='history.back()'><span>戻る</span></b
 
 /*口コミAPIの処理開始
 //Find Place requestsを使って住所から特定の一店舗を検索
-$key = "AIzaSyD756fOGZoQkH4WL5B266Ivy8h6GtSDsIU";
+$key = "APIkey";
 $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json";
 
 $address = $data[$cnt]['Name'];
